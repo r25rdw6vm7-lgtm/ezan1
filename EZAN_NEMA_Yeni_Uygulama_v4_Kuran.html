@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071b19">
+<title>EZAN NEMA — Premium</title>
+<style>
+:root{--bg:#071b19;--panel:#102a26;--panel2:#16352f;--text:#f3f5e9;--muted:#a9bdb3;--accent:#d6b56d;--accent2:#74d7bb;--line:#29453d;--shadow:0 18px 55px #0003}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#245246 0,transparent 55%),var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+body.light{--bg:#f1f3ed;--panel:#fff;--panel2:#e8eee5;--text:#192b25;--muted:#63746b;--accent:#987126;--accent2:#247e68;--line:#d5dfd5;--shadow:0 15px 45px #203a2415;background:radial-gradient(ellipse at 50% -15%,#d2e4d4 0,transparent 55%),var(--bg)}
+button,input,select{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent2);outline-offset:3px}
+.app{max-width:1120px;margin:auto;padding:18px 18px 100px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}.brand{display:flex;align-items:center;gap:11px}.logo{width:44px;height:44px;border:1px solid var(--accent);border-radius:15px;display:grid;place-items:center;color:var(--accent);font-size:23px;background:linear-gradient(145deg,var(--panel2),transparent)}.brand h1{font-size:17px;letter-spacing:2px;margin:0}.brand small{color:var(--muted);font-size:11px;letter-spacing:1.8px}.top-actions{display:flex;gap:8px}.iconbtn,.btn{border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:10px 13px}.iconbtn{width:43px;height:43px;display:grid;place-items:center}.btn.primary{background:var(--accent);color:#17221b;border-color:transparent;font-weight:700}.btn.subtle{background:var(--panel2)}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--accent);text-transform:uppercase}.hero{display:grid;grid-template-columns:1.02fr .98fr;gap:18px;align-items:stretch}.panel{background:linear-gradient(145deg,var(--panel),color-mix(in srgb,var(--panel) 85%,transparent));border:1px solid var(--line);border-radius:25px;padding:22px;box-shadow:var(--shadow);min-width:0}.welcome h2{font-size:clamp(25px,4vw,39px);line-height:1.12;letter-spacing:-1.2px;margin:10px 0}.welcome p{color:var(--muted);margin:0 0 18px}.place{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:13px}.next-prayer{display:flex;justify-content:space-between;align-items:end;gap:10px;margin-top:24px;padding-top:17px;border-top:1px solid var(--line)}.next-prayer strong{display:block;font-size:22px}.next-prayer .count{font-size:clamp(24px,4vw,34px);color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:1px}.ring-panel{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}.ring-panel:before{content:"";position:absolute;inset:-70px;background:radial-gradient(circle,#c6a65a12,transparent 60%);pointer-events:none}.ring-wrap{width:min(100%,300px);aspect-ratio:1;position:relative;display:grid;place-items:center;margin:8px auto 15px}.ring-svg{width:100%;height:100%;overflow:visible;transform:rotate(-90deg)}.ring-track{fill:none;stroke:var(--line);stroke-width:7}.ring-progress{fill:none;stroke:var(--accent);stroke-width:7;stroke-linecap:round;stroke-dasharray:565.5;stroke-dashoffset:142;filter:drop-shadow(0 0 7px color-mix(in srgb,var(--accent) 65%,transparent));transition:stroke-dashoffset .7s,stroke .4s}.ring-inner{position:absolute;inset:16%;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle,var(--panel2),var(--panel) 70%);border:1px solid var(--line)}.ring-kicker{font-size:10px;letter-spacing:2px;color:var(--muted)}.ring-time{font-size:clamp(32px,5vw,43px);font-weight:650;letter-spacing:-1.5px;font-variant-numeric:tabular-nums}.ring-name{color:var(--accent);font-size:13px}.ring-profile{font-size:11px;color:var(--muted);margin-top:5px}.ring-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}.section-head{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:26px 2px 13px}.section-head h2{font-size:20px;margin:0}.section-head p{font-size:12px;color:var(--muted);margin:3px 0 0}.prayer-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.prayer-card{border:1px solid var(--line);border-radius:17px;background:var(--panel);padding:14px 10px;min-width:0}.prayer-card.active{border-color:var(--accent);background:linear-gradient(150deg,color-mix(in srgb,var(--accent) 13%,var(--panel)),var(--panel))}.prayer-card .pname{font-size:12px;color:var(--muted)}.prayer-card .ptime{font-weight:650;font-size:19px;margin-top:5px}.prayer-card .tag{font-size:10px;color:var(--accent);margin-top:5px;min-height:14px}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.quick{display:flex;gap:13px;align-items:center;text-align:left;width:100%;padding:17px;background:var(--panel);border:1px solid var(--line);border-radius:18px}.quick .qicon{width:44px;height:44px;border-radius:14px;background:var(--panel2);display:grid;place-items:center;font-size:21px;color:var(--accent)}.quick strong{display:block}.quick small{display:block;color:var(--muted);margin-top:3px}.view{display:none}.view.active{display:block}.nav{position:fixed;bottom:0;left:0;right:0;z-index:5;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(18px);border-top:1px solid var(--line)}.nav-inner{max-width:720px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:5px}.nav button{border:0;background:transparent;color:var(--muted);border-radius:13px;padding:8px 3px;font-size:11px;display:flex;align-items:center;gap:4px;flex-direction:column}.nav button .ni{font-size:20px;line-height:1.1}.nav button.active{color:var(--accent);background:var(--panel2)}.subnav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:12px}.chip.active{border-color:var(--accent);color:var(--accent);background:var(--panel2)}.section-title{font-size:30px;margin:7px 0 5px;letter-spacing:-.8px}.lead{color:var(--muted);margin:0 0 20px}.studio-grid{display:grid;grid-template-columns:minmax(250px,.9fr) minmax(0,1.1fr);gap:16px}.studio-preview{min-height:370px;display:flex;flex-direction:column;align-items:center;justify-content:center}.studio-preview .ring-wrap{width:min(100%,290px)}.controls{display:grid;gap:16px}.control{display:grid;gap:8px}.control label{display:flex;justify-content:space-between;gap:12px;font-size:13px}.control label span{color:var(--muted)}input[type=range]{width:100%;accent-color:var(--accent)}input[type=color]{width:42px;height:32px;border:0;background:transparent}.select{width:100%;padding:12px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;color:var(--text)}.profiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.profile{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 8px;text-align:center}.profile strong{display:block;font-size:14px}.profile small{display:block;font-size:10px;color:var(--muted);margin-top:4px}.profile.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--panel2)}.tasbih-count{font-size:clamp(70px,15vw,120px);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-5px;text-align:center;margin:25px 0 8px}.tasbih-name{text-align:center;font-size:19px}.tasbih-actions{display:flex;justify-content:center;gap:10px;margin:24px 0}.tasbih-main{width:150px;height:150px;border-radius:50%;border:1px solid var(--accent);background:radial-gradient(circle at 35% 25%,var(--panel2),var(--panel));box-shadow:0 0 0 8px color-mix(in srgb,var(--accent) 10%,transparent),0 15px 40px #0002;font-size:20px}.tasbih-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.tasbih-option{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:15px;text-align:left}.tasbih-option.active{border-color:var(--accent)}.tasbih-option strong{display:block}.tasbih-option small{color:var(--muted)}.quran-grid,.discover-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.ayah-list{display:grid;gap:12px}.ayah-card{padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--panel2)}.ayah-head{display:flex;justify-content:space-between;align-items:center;gap:8px;color:var(--accent);font-size:12px}.ayah-arabic{font-family:serif;font-size:clamp(24px,4vw,34px);line-height:2;text-align:right;direction:rtl;margin:14px 0}.ayah-translation{color:var(--text);font-size:14px;line-height:1.8;border-top:1px solid var(--line);padding-top:10px}.ayah-controls{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}.ayah-controls button{padding:7px 10px;font-size:12px}.surah,.discover-card{padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:18px}.surah{display:flex;align-items:center;gap:13px;text-align:left;width:100%}.surah-num{width:38px;height:38px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;color:var(--accent)}.surah strong{display:block}.surah small{color:var(--muted)}.arabic{font-family:serif;font-size:30px;text-align:right;line-height:2.1}.note{border:1px dashed var(--line);padding:13px;border-radius:13px;color:var(--muted);font-size:12px;margin-top:15px}.settings-list{display:grid;gap:10px}.setting-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px;background:var(--panel);border:1px solid var(--line);border-radius:16px}.setting-row p{margin:0}.setting-row small{display:block;color:var(--muted);margin-top:3px}.switch{width:48px;height:28px;border-radius:30px;background:var(--line);padding:3px;border:0;flex-shrink:0}.switch:after{content:"";display:block;width:22px;height:22px;background:var(--muted);border-radius:50%;transition:transform .2s}.switch.on{background:var(--accent)}.switch.on:after{background:#fff;transform:translateX(20px)}.toast{position:fixed;top:15px;left:50%;transform:translate(-50%,-130%);background:var(--text);color:var(--bg);padding:11px 17px;border-radius:12px;z-index:10;transition:transform .25s;box-shadow:var(--shadow)}.toast.show{transform:translate(-50%,0)}.footer{font-size:11px;color:var(--muted);text-align:center;padding:25px 0 0}
+@media(max-width:760px){.app{padding:13px 12px 95px}.hero{grid-template-columns:1fr}.welcome{padding:20px}.ring-panel{min-height:380px}.prayer-grid{grid-template-columns:repeat(3,1fr)}.quick-grid{grid-template-columns:1fr}.studio-grid{grid-template-columns:1fr}.studio-preview{min-height:330px}.profiles{grid-template-columns:repeat(3,1fr)}.tasbih-list{grid-template-columns:1fr}.quran-grid,.discover-grid{grid-template-columns:1fr}.section-head{margin-top:22px}.section-title{font-size:27px}}
+@media(min-width:761px) and (max-width:980px){.prayer-grid{grid-template-columns:repeat(3,1fr)}.profiles{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="app">
+<header class="top">
+ <div class="brand"><div class="logo">۞</div><div><h1>EZAN NEMA</h1><small>VAKİT • MANEVİYAT • KEŞİF</small></div></div>
+ <div class="top-actions"><button class="iconbtn" id="themeBtn" aria-label="Temayı değiştir" title="Açık/koyu tema">◐</button><button class="iconbtn" id="settingsTop" aria-label="Ayarlar" title="Ayarlar">⚙</button></div>
+</header>
+
+<section class="view active" id="view-ezan">
+ <div class="hero">
+  <div class="panel welcome">
+   <div class="eyebrow">Günün ritmi</div>
+   <h2>Vaktin farkında,<br>anında huzur.</h2>
+   <p>Namaz vakitlerini, tesbihatını ve Kur’an yolculuğunu tek yerde yönet.</p>
+   <div class="place"><span>⌖</span><span id="placeLabel">Konum seçilmedi</span><button class="chip" id="locationBtn">Konumu bul</button></div>
+   <div class="next-prayer"><div><div class="eyebrow">Sıradaki vakit</div><strong id="nextPrayer">İkindi</strong><span id="nextDate" style="color:var(--muted);font-size:12px">Vakit verisi bekleniyor</span></div><div class="count" id="countdown">--:--:--</div></div>
+   <div class="note" id="prayerNotice">Bu ilk sürümde vakitler örnek gösterilir. Gerçek vakitler için güvenilir namaz vakti kaynağı henüz bağlanmadı.</div>
+  </div>
+  <div class="panel ring-panel">
+   <div class="eyebrow">Kişisel zaman halkası</div>
+   <div class="ring-wrap" id="mainRing">
+    <svg class="ring-svg" viewBox="0 0 200 200" aria-label="Namaz vakti zaman halkası"><circle class="ring-track" cx="100" cy="100" r="90"/><circle class="ring-progress" id="ringProgress" cx="100" cy="100" r="90"/></svg>
+    <div class="ring-inner"><div class="ring-kicker">SIRADAKİ VAKTE</div><div class="ring-time" id="ringTime">--:--</div><div class="ring-name" id="ringPrayer">İkindi</div><div class="ring-profile" id="ringProfile">3D • Zümrüt</div></div>
+   </div>
+   <div class="ring-actions"><button class="btn primary" data-go="studio">Halkayı özelleştir</button><button class="btn subtle" id="randomProfile">Stil değiştir</button></div>
+  </div>
+ </div>
+ <div class="section-head"><div><h2>Bugünün vakitleri</h2><p>Örnek saatler — gerçek veri bağlantısı bekleniyor</p></div><button class="chip" data-go="settings">Vakit ayarları</button></div>
+ <div class="prayer-grid" id="prayerGrid"></div>
+ <div class="section-head"><div><h2>Kısayollar</h2><p>En çok kullandığın alanlara hızlı erişim</p></div></div>
+ <div class="quick-grid">
+  <button class="quick" data-go="tasbih"><span class="qicon">◉</span><span><strong>Tesbihat</strong><small>Zikre kaldığın yerden devam et</small></span></button>
+  <button class="quick" data-go="quran"><span class="qicon">۞</span><span><strong>Kur’an</strong><small>Sureler ve okuma alanı</small></span></button>
+  <button class="quick" data-go="discover"><span class="qicon">✧</span><span><strong>Keşfet</strong><small>Günlük içerik ve araçlar</small></span></button>
+ </div>
+</section>
+
+<section class="view" id="view-studio">
+ <div class="eyebrow">Kişiselleştirme laboratuvarı</div><h2 class="section-title">Zaman Halkası Stüdyosu</h2><p class="lead">Profili seç; derinlik, ışık, renk ve hareketi ayrı ayrı ayarla.</p>
+ <div class="studio-grid">
+  <div class="panel studio-preview">
+   <div class="eyebrow">Canlı önizleme</div>
+   <div class="ring-wrap" id="studioRing">
+    <svg class="ring-svg" viewBox="0 0 200 200" aria-label="Özelleştirilebilir zaman halkası"><circle class="ring-track" cx="100" cy="100" r="90"/><circle class="ring-progress" id="studioProgress" cx="100" cy="100" r="90"/></svg>
+    <div class="ring-inner"><div class="ring-kicker">SIRADAKİ VAKTE</div><div class="ring-time" id="studioTime">--:--</div><div class="ring-name" id="studioPrayer">İkindi</div><div class="ring-profile" id="studioProfileName">3D • Zümrüt</div></div>
+   </div>
+   <div class="ring-actions"><button class="btn primary" id="saveStyle">Stilimi kaydet</button><button class="btn" id="resetStyle">Sıfırla</button></div>
+  </div>
+  <div class="panel controls">
+   <div class="control"><label for="profileSelect">Görsel profili <span id="profileCount">12 profil</span></label><select class="select" id="profileSelect"></select></div>
+   <div class="profiles" id="profileGrid"></div>
+   <div class="control"><label for="colorSelect">Renk paleti</label><select class="select" id="colorSelect"><option value="emerald">Zümrüt & Altın</option><option value="blue">Gece Mavisi</option><option value="violet">Ametist</option><option value="rose">Gül Bakırı</option><option value="ice">Buz Kristali</option><option value="mono">Monokrom</option></select></div>
+   <div class="control"><label for="thickness">Halka kalınlığı <span id="thicknessVal">7</span></label><input id="thickness" type="range" min="3" max="15" value="7"></div>
+   <div class="control"><label for="glow">Işıma <span id="glowVal">65%</span></label><input id="glow" type="range" min="0" max="100" value="65"></div>
+   <div class="control"><label for="depth">Katman derinliği <span id="depthVal">3</span></label><input id="depth" type="range" min="1" max="12" value="3"></div>
+   <div class="control"><label for="motion">Hareket yoğunluğu <span id="motionVal">Orta</span></label><input id="motion" type="range" min="0" max="100" value="35"></div>
+   <div class="control"><label for="scale">Halka boyutu <span id="scaleVal">100%</span></label><input id="scale" type="range" min="75" max="115" value="100"></div>
+   <div class="setting-row"><div><p>Katmanlı derinlik efekti</p><small>Profilin çevresine ışık halkaları ekler</small></div><button class="switch on" id="depthSwitch" aria-label="Katman efektini aç/kapat" aria-pressed="true"></button></div>
+   <div class="setting-row"><div><p>Yumuşak animasyon</p><small>Hafif hareket; azaltılmış hareket tercihi gözetilir</small></div><button class="switch on" id="motionSwitch" aria-label="Animasyonu aç/kapat" aria-pressed="true"></button></div>
+   <div class="note">3D–200D adları bu prototipte görsel profil kademeleridir; fiziksel boyut veya gerçek 200 boyutlu teknoloji anlamına gelmez.</div>
+  </div>
+ </div>
+</section>
+
+<section class="view" id="view-tasbih">
+ <div class="eyebrow">Düzenli zikir alanı</div><h2 class="section-title">Tesbihat</h2><p class="lead">Sayaç ve seçilen zikir cihazında saklanır. Sayacı kullanmak için büyük düğmeye dokun.</p>
+ <div class="panel" style="max-width:650px;margin:auto">
+  <div class="eyebrow" style="text-align:center">Seçili zikir</div><div class="tasbih-name" id="tasbihName">Sübhanallah</div>
+  <div class="tasbih-count" id="tasbihCount">0</div><div style="text-align:center;color:var(--muted);font-size:12px" id="tasbihGoal">Hedef: 33</div>
+  <div class="tasbih-actions"><button class="tasbih-main" id="tasbihAdd">+1<br><small style="font-size:12px">ZİKRET</small></button></div>
+  <div class="ring-actions"><button class="btn subtle" id="tasbihUndo">Son sayımı geri al</button><button class="btn" id="tasbihReset">Sayacı sıfırla</button></div>
+ </div>
+ <div class="section-head"><div><h2>Zikir seç</h2><p>Bir zikir seçerek sayaç başlığını değiştir</p></div></div><div class="tasbih-list" id="tasbihOptions"></div>
+ <div class="note">Sayaç kayıtları bu cihazın tarayıcı depolamasında tutulur. Tarayıcı verileri temizlenirse kayıtlar silinebilir.</div>
+</section>
+
+<section class="view" id="view-quran">
+ <div class="eyebrow">Okuma alanı</div><h2 class="section-title">Kur’an-ı Kerim</h2><p class="lead">Sureleri çevrimiçi kaynaktan aç; Arapça metni oku, Türkçe meali göster ve ayet sesini dinle.</p>
+ <div class="subnav"><input id="surahSearch" class="select" style="flex:1;min-width:180px" placeholder="Sure ara…" aria-label="Sure ara"><select id="translationSelect" class="select" style="flex:1;min-width:180px" aria-label="Meal seçimi"><option value="tr.diyanet">Türkçe meal • Diyanet</option><option value="tr.yazir">Türkçe meal • Elmalılı Hamdi Yazır</option><option value="en.sahih">English • Saheeh International</option><option value="none">Meal kapalı</option></select><button class="chip" id="resumeReading">Kaldığım yer</button></div>
+ <div id="quranStatus" class="note" role="status">Sure listesi yükleniyor…</div>
+ <div class="panel" id="quranReader" style="display:none;margin-bottom:14px"><div class="section-head" style="margin-top:0"><div><h2 id="readerTitle">Fâtiha</h2><p id="readerMeta">Yükleniyor…</p></div><button class="chip" id="closeReader">Sure listesi</button></div><div class="ring-actions" style="justify-content:flex-start;margin:0 0 12px"><button class="btn primary" id="playSurah">Sureyi dinle</button><button class="btn" id="stopQuranAudio">Durdur</button><button class="btn" id="bookmarkAyah">Yer imini kaydet</button></div><div id="ayahList" class="ayah-list"></div><div class="note" id="readerNote">Metin ve meal çevrimiçi kaynaktan yüklenir. Kaynak erişilemezse hata gösterilir.</div></div>
+ <div class="quran-grid" id="surahGrid"></div>
+ <div class="note">Metin, meal ve ayet sesleri AlQuran Cloud API üzerinden çevrimiçi alınır. Kaynağın erişilebilirliği ve seçilen meal kimliği bağlantıya bağlıdır; önemli dinî metinleri ayrıca güvenilir basılı kaynakla karşılaştırın.</div>
+</section>
+
+<section class="view" id="view-discover">
+ <div class="eyebrow">Manevi keşif</div><h2 class="section-title">Keşfet</h2><p class="lead">Günlük kullanım araçları ve kişisel çalışma alanları.</p>
+ <div class="discover-grid">
+  <button class="discover-card" data-go="studio" style="text-align:left"><div class="qicon">◌</div><h3>Zaman halkası tasarla</h3><p style="color:var(--muted)">Renk, katman ve görünümü kişiselleştir.</p></button>
+  <button class="discover-card" data-go="tasbih" style="text-align:left"><div class="qicon">◉</div><h3>Tesbihat sayacı</h3><p style="color:var(--muted)">Günlük zikrini takip et.</p></button>
+  <button class="discover-card" data-go="quran" style="text-align:left"><div class="qicon">۞</div><h3>Kur’an okuma alanı</h3><p style="color:var(--muted)">Sure listesine ulaş.</p></button>
+  <div class="discover-card"><div class="qicon">☼</div><h3>Günün niyeti</h3><p style="color:var(--muted)">Bugün için bir hedef belirle ve gün içinde hatırla.</p><input id="intentionInput" class="select" placeholder="Bugünkü niyetim…" maxlength="180"><button class="btn primary" id="saveIntention" style="margin-top:10px">Niyeti kaydet</button></div>
+ </div>
+</section>
+
+<section class="view" id="view-settings">
+ <div class="eyebrow">Uygulama tercihleri</div><h2 class="section-title">Ayarlar</h2><p class="lead">Görünüm ve uygulama davranışlarını buradan düzenle.</p>
+ <div class="settings-list">
+  <div class="setting-row"><div><p>Açık / koyu tema</p><small>Görünümü anında değiştirir</small></div><button class="btn" id="themeSetting">Temayı değiştir</button></div>
+  <div class="setting-row"><div><p>Konum</p><small id="settingsLocation">Henüz konum alınmadı</small></div><button class="btn" id="locationSetting">Konumu bul</button></div>
+  <div class="setting-row"><div><p>Vakit hesaplama</p><small>Gerçek namaz vakti kaynağı bağlı değil</small></div><span class="chip">Bekliyor</span></div>
+  <div class="setting-row"><div><p>Ezan bildirimleri</p><small id="notifyStatus">İzin durumu kontrol edilmedi</small></div><button class="btn" id="enableNotifications">İzni etkinleştir</button></div>
+  <div class="setting-row"><div><p>Vakit yaklaşma uyarısı</p><small>Vakit saatinden önce hatırlatma</small></div><button class="switch" id="reminderSwitch" aria-label="Vakit hatırlatmasını aç/kapat" aria-pressed="false"></button></div>
+  <div class="setting-row"><div><p>Ezan sesi</p><small>Deneme sesi tarayıcıda üretilir; gerçek ezan kaydı değildir</small></div><div style="display:flex;gap:7px;flex-wrap:wrap"><button class="btn" id="testSound">Sesi dene</button><button class="btn" id="stopSound">Durdur</button></div></div>
+  <div class="setting-row"><div><p>Verileri dışa aktar</p><small>Tesbihat ve görünüm tercihlerini JSON olarak indir</small></div><button class="btn" id="exportData">Dışa aktar</button></div>
+  <div class="setting-row"><div><p>Yerel verileri sıfırla</p><small>Bu cihazda saklanan prototip tercihlerini siler</small></div><button class="btn" id="clearData">Sıfırla</button></div>
+ </div>
+ <div class="note">Bildirimler tarayıcı iznine ve sayfanın çalışma koşullarına bağlıdır; tarayıcı kapalıyken güvenilir zamanlanmış bildirim garantisi yoktur. Gerçek ezan kaydı bu prototipe eklenmedi. Tam uygulamada arka plan bildirimleri için yerel mobil bildirim altyapısı gerekir.</div>
+</section>
+<div class="footer">EZAN NEMA • Yeni uygulama prototipi • Çevrimdışı arayüz</div>
+</div>
+
+<nav class="nav" aria-label="Ana gezinme"><div class="nav-inner">
+ <button class="active" data-nav="ezan"><span class="ni">◷</span>Ezan</button>
+ <button data-nav="tasbih"><span class="ni">◉</span>Tesbihat</button>
+ <button data-nav="quran"><span class="ni">۞</span>Kur’an</button>
+ <button data-nav="discover"><span class="ni">✧</span>Keşfet</button>
+ <button data-nav="settings"><span class="ni">⚙</span>Ayarlar</button>
+</div></nav>
+<script>
+(() => {
+const $=id=>document.getElementById(id);
+const safeGet=(k,d)=>{try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch{return d}};
+const safeSet=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}};
+const toast=msg=>{const el=$('toast');el.textContent=msg;el.classList.add('show');clearTimeout(window.__toastTimer);window.__toastTimer=setTimeout(()=>el.classList.remove('show'),2400)};
+const profiles=[
+ {id:'3D',name:'Zümrüt',depth:2,glow:35,thick:5,desc:'Sade'},
+ {id:'4D',name:'Kristal',depth:3,glow:45,thick:6,desc:'Kristal'},
+ {id:'5D',name:'Aurora',depth:4,glow:60,thick:7,desc:'Işıltılı'},
+ {id:'10D',name:'Nebula',depth:5,glow:70,thick:7,desc:'Kozmik'},
+ {id:'20D',name:'Prizma',depth:6,glow:78,thick:8,desc:'Prizmatik'},
+ {id:'30D',name:'Halo',depth:7,glow:82,thick:8,desc:'Işık katmanı'},
+ {id:'50D',name:'Abyss',depth:8,glow:86,thick:9,desc:'Derin'},
+ {id:'70D',name:'Eclipse',depth:9,glow:88,thick:9,desc:'Tutulma'},
+ {id:'100D',name:'Celestial',depth:10,glow:92,thick:10,desc:'Göksel'},
+ {id:'120D',name:'Infinity',depth:11,glow:95,thick:10,desc:'Çok katmanlı'},
+ {id:'150D',name:'Quantum',depth:12,glow:98,thick:11,desc:'Yoğun'},
+ {id:'200D',name:'Ethereal',depth:12,glow:100,thick:12,desc:'Maksimum'}
+];
+const palettes={emerald:'#d6b56d',blue:'#78b7ff',violet:'#c4a2ff',rose:'#e6a18e',ice:'#8de5ed',mono:'#d9e0dc'};
+let style=Object.assign({profile:'3D',palette:'emerald',thickness:7,glow:65,depth:3,motion:35,scale:100,depthOn:true,motionOn:true},safeGet('ezannema.style',{}));
+let tasbih=safeGet('ezannema.tasbih',{name:'Sübhanallah',count:0,goal:33});
+let theme=safeGet('ezannema.theme','dark');
+const zikirs=[['Sübhanallah',33],['Elhamdülillah',33],['Allahu ekber',34],['Estağfirullah',100],['Salavat',100],['Lâ ilâhe illallah',100]];
+let prayerTimes=[['İmsak','04:58'],['Güneş','06:22'],['Öğle','12:37'],['İkindi','16:04'],['Akşam','18:42'],['Yatsı','20:01']];
+let timingsLive=false;
+function applyTheme(){document.body.classList.toggle('light',theme==='light');safeSet('ezannema.theme',theme)}
+function nav(view){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+view));document.querySelectorAll('[data-nav]').forEach(b=>b.classList.toggle('active',b.dataset.nav===view));window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('[data-nav]').forEach(b=>b.addEventListener('click',()=>nav(b.dataset.nav)));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{const v=b.dataset.go;nav(v==='studio'?'studio':v)}));
+$('themeBtn').onclick=$('themeSetting').onclick=()=>{theme=theme==='dark'?'light':'dark';applyTheme()};
+$('settingsTop').onclick=()=>nav('settings');
+function renderPrayers(){
+ const now=new Date(),mins=now.getHours()*60+now.getMinutes();
+ let next=prayerTimes.findIndex(([,t])=>{const [h,m]=t.split(':').map(Number);return h*60+m>mins});
+ if(next<0)next=0;
+ $('prayerGrid').innerHTML=prayerTimes.map(([n,t],i)=>`<div class="prayer-card ${i===next?'active':''}"><div class="pname">${n}</div><div class="ptime">${t}</div><div class="tag">${i===next?(timingsLive?'Sıradaki vakit':'Örnek vakit'):''}</div></div>`).join('');
+ const note=$('prayerNotice');
+ if(timingsLive){note.textContent='Namaz vakitleri çevrimiçi hesaplama kaynağından alındı. Hesaplama yöntemi: Türkiye (13).';note.style.borderStyle='solid';}
+ else {note.textContent='Canlı vakit verisi alınamadı; ekrandaki saatler örnektir. İnternet bağlantısını ve konum iznini kontrol edin.';note.style.borderStyle='dashed';}
+ const sub=document.querySelector('#view-ezan .section-head p');if(sub)sub.textContent=timingsLive?'Çevrimiçi hesaplama kaynağı • Türkiye yöntemi':'Örnek saatler — gerçek veri bağlantısı bekleniyor';
+}
+function renderProfileOptions(){
+ $('profileSelect').innerHTML=profiles.map(p=>`<option value="${p.id}">${p.id} — ${p.name}</option>`).join('');
+ $('profileGrid').innerHTML=profiles.map(p=>`<button class="profile ${style.profile===p.id?'active':''}" data-profile="${p.id}"><strong>${p.id}</strong><small>${p.name}</small></button>`).join('');
+ document.querySelectorAll('[data-profile]').forEach(b=>b.onclick=()=>setProfile(b.dataset.profile));
+}
+function setProfile(id){const p=profiles.find(x=>x.id===id)||profiles[0];style.profile=id;style.depth=p.depth;style.glow=p.glow;style.thickness=p.thick;$('profileSelect').value=id;syncControls();renderProfileOptions();renderRings();safeSet('ezannema.style',style)}
+function syncControls(){
+ $('colorSelect').value=style.palette;$('thickness').value=style.thickness;$('glow').value=style.glow;$('depth').value=style.depth;$('motion').value=style.motion;$('scale').value=style.scale;
+ $('thicknessVal').textContent=style.thickness;$('glowVal').textContent=style.glow+'%';$('depthVal').textContent=style.depth;$('motionVal').textContent=style.motion===0?'Kapalı':style.motion<35?'Hafif':style.motion<70?'Orta':'Yoğun';$('scaleVal').textContent=style.scale+'%';
+ $('depthSwitch').classList.toggle('on',style.depthOn);$('depthSwitch').setAttribute('aria-pressed',String(style.depthOn));$('motionSwitch').classList.toggle('on',style.motionOn);$('motionSwitch').setAttribute('aria-pressed',String(style.motionOn));
+}
+function ringMarkup(id){return $(id)}
+function renderRings(){
+ const p=profiles.find(x=>x.id===style.profile)||profiles[0],accent=palettes[style.palette]||palettes.emerald;
+ document.documentElement.style.setProperty('--accent',accent);
+ ['mainRing','studioRing'].forEach((rid,idx)=>{
+  const wrap=$(rid),progress=idx===0?$('ringProgress'):$('studioProgress'),prayer=idx===0?$('ringPrayer'):$('studioPrayer'),profile=idx===0?$('ringProfile'):$('studioProfileName');
+  wrap.style.transform=`scale(${style.scale/100})`;
+  wrap.style.filter=`drop-shadow(0 0 ${Math.round(style.glow/15)}px ${accent}33)`;
+  const layers=style.depthOn?Math.max(1,Math.min(12,style.depth)):1;
+  wrap.style.background=`radial-gradient(circle, ${accent}${Math.round(style.glow/7).toString(16).padStart(2,'0')} 0%, transparent ${Math.min(70,22+layers*3)}%)`;
+  wrap.style.borderRadius='50%';
+  progress.style.stroke=accent;progress.style.strokeWidth=style.thickness;
+  progress.style.filter=`drop-shadow(0 0 ${style.glow/13}px ${accent})`;
+  progress.style.strokeDasharray='565.5';progress.style.strokeDashoffset=142;
+  prayer.textContent='İkindi';profile.textContent=`${p.id} • ${p.name}`;
+  const old=wrap.querySelectorAll('.extra-layer');old.forEach(x=>x.remove());
+  if(style.depthOn&&layers>1){for(let i=1;i<layers;i++){const el=document.createElement('div');el.className='extra-layer';const size=100-i*4.2;el.style.cssText=`position:absolute;width:${size}%;height:${size}%;border:1px solid ${accent};border-radius:50%;opacity:${Math.max(.035,.28-i*.022)};transform:rotate(${i*7}deg) scale(${1+i*.004});pointer-events:none;box-shadow:0 0 ${Math.max(0,style.glow/12-i)}px ${accent}55;`;wrap.insertBefore(el,wrap.firstChild)}}
+  wrap.style.animation=style.motionOn&&style.motion>0&&!matchMedia('(prefers-reduced-motion: reduce)').matches?`haloFloat ${Math.max(3,12-style.motion/12)}s ease-in-out infinite alternate`:'none';
+ });
+}
+const animStyle=document.createElement('style');animStyle.textContent='@keyframes haloFloat{from{transform:scale(var(--unused,1)) translateY(0)}to{translate:0 -3px}}';document.head.appendChild(animStyle);
+['colorSelect','thickness','glow','depth','motion','scale'].forEach(id=>$(id).addEventListener('input',()=>{
+ if(id==='colorSelect')style.palette=$(id).value;
+ if(id==='thickness')style.thickness=+$(id).value;
+ if(id==='glow')style.glow=+$(id).value;
+ if(id==='depth')style.depth=+$(id).value;
+ if(id==='motion')style.motion=+$(id).value;
+ if(id==='scale')style.scale=+$(id).value;
+ syncControls();renderRings();safeSet('ezannema.style',style);
+}));
+$('profileSelect').onchange=e=>setProfile(e.target.value);
+$('depthSwitch').onclick=()=>{style.depthOn=!style.depthOn;syncControls();renderRings();safeSet('ezannema.style',style)};
+$('motionSwitch').onclick=()=>{style.motionOn=!style.motionOn;syncControls();renderRings();safeSet('ezannema.style',style)};
+$('saveStyle').onclick=()=>{safeSet('ezannema.style',style);toast('Zaman halkası tercihin bu cihazda kaydedildi.')};
+$('resetStyle').onclick=()=>{style={profile:'3D',palette:'emerald',thickness:7,glow:65,depth:3,motion:35,scale:100,depthOn:true,motionOn:true};syncControls();renderProfileOptions();renderRings();safeSet('ezannema.style',style);toast('Görünüm varsayılan ayarlara döndürüldü.')};
+$('randomProfile').onclick=()=>{const idx=(profiles.findIndex(p=>p.id===style.profile)+1)%profiles.length;setProfile(profiles[idx].id);toast(profiles[idx].id+' profili seçildi.')};
+function renderTasbih(){ $('tasbihName').textContent=tasbih.name;$('tasbihCount').textContent=tasbih.count;$('tasbihGoal').textContent='Hedef: '+tasbih.goal+' • '+(tasbih.count>=tasbih.goal?'Hedef tamamlandı':'Kalan: '+Math.max(0,tasbih.goal-tasbih.count));$('tasbihOptions').innerHTML=zikirs.map(([n,g])=>`<button class="tasbih-option ${tasbih.name===n?'active':''}" data-zikir="${n}"><strong>${n}</strong><small>Hedef: ${g}</small></button>`).join('');document.querySelectorAll('[data-zikir]').forEach(b=>b.onclick=()=>{const z=zikirs.find(z=>z[0]===b.dataset.zikir);tasbih.name=z[0];tasbih.goal=z[1];safeSet('ezannema.tasbih',tasbih);renderTasbih()})}
+$('tasbihAdd').onclick=()=>{tasbih.count++;safeSet('ezannema.tasbih',tasbih);renderTasbih();if(tasbih.count===tasbih.goal)toast('Seçilen zikir hedefi tamamlandı.')};
+$('tasbihUndo').onclick=()=>{tasbih.count=Math.max(0,tasbih.count-1);safeSet('ezannema.tasbih',tasbih);renderTasbih()};
+$('tasbihReset').onclick=()=>{if(confirm('Seçili zikrin sayacı sıfırlansın mı?')){tasbih.count=0;safeSet('ezannema.tasbih',tasbih);renderTasbih()}};
+let surahs=[],currentSurah=1,currentAudio=null,currentAyahs=[];
+async function apiJson(url){
+ const response=await fetch(url,{headers:{'Accept':'application/json'}});
+ if(!response.ok)throw new Error('HTTP '+response.status);
+ const json=await response.json();if(json.code!==200)throw new Error(json.status||'Kaynak yanıtı geçersiz');return json.data;
+}
+function renderSurahList(){
+ const q=($('surahSearch').value||'').trim().toLocaleLowerCase('tr');
+ const filtered=surahs.filter(s=>`${s.number} ${s.name} ${s.englishName} ${s.englishNameTranslation}`.toLocaleLowerCase('tr').includes(q));
+ $('surahGrid').innerHTML=filtered.map(s=>`<button class="surah" data-surah="${s.number}"><span class="surah-num">${s.number}</span><span><strong>${s.name}</strong><small>${s.numberOfAyahs} ayet • ${s.englishNameTranslation||s.englishName}</small></span></button>`).join('')||'<div class="note">Aramayla eşleşen sure bulunamadı.</div>';
+ document.querySelectorAll('[data-surah]').forEach(b=>b.onclick=()=>openSurah(+b.dataset.surah,1));
+}
+async function renderQuran(){
+ $('quranStatus').textContent='Sure listesi güvenilir çevrimiçi kaynaktan yükleniyor…';
+ try{surahs=await apiJson('https://api.alquran.cloud/v1/surah');renderSurahList();$('quranStatus').textContent=`${surahs.length} sure yüklendi. Sureyi açmak için dokun.`}
+ catch(e){$('quranStatus').textContent='Sure listesi yüklenemedi. İnternet bağlantısını kontrol edip yeniden deneyin.';$('surahGrid').innerHTML='<button class="btn" id="retryQuran">Yeniden dene</button>';$('retryQuran').onclick=renderQuran}
+}
+async function openSurah(number,startAyah=1){
+ currentSurah=number;$('quranReader').style.display='block';$('ayahList').innerHTML='<div class="note">Arapça metin ve meal yükleniyor…</div>';$('readerTitle').textContent=surahs.find(s=>s.number===number)?.name||`Sure ${number}`;$('readerMeta').textContent='Metin yükleniyor…';$('readerNote').textContent='Arapça metin, seçili meal ve ses bağlantısı çevrimiçi kaynaktan isteniyor.';
+ $('quranReader').scrollIntoView({behavior:'smooth',block:'start'});
+ try{
+  const translation=$('translationSelect').value;
+  const requests=[apiJson(`https://api.alquran.cloud/v1/surah/${number}/quran-uthmani`),translation==='none'?Promise.resolve(null):apiJson(`https://api.alquran.cloud/v1/surah/${number}/${encodeURIComponent(translation)}`),apiJson(`https://api.alquran.cloud/v1/surah/${number}/ar.alafasy`).catch(()=>null)];
+  const [arabic,meal,audio]=await Promise.all(requests);
+  currentAyahs=arabic.ayahs.map((a,i)=>({numberInSurah:a.numberInSurah,number:a.number,text:a.text,translation:meal?.ayahs?.[i]?.text||'',audio:audio?.ayahs?.[i]?.audio||''}));
+  $('readerTitle').textContent=`${arabic.name} • ${arabic.englishName}`;
+  $('readerMeta').textContent=`${arabic.numberOfAyahs} ayet • ${arabic.revelationType==='Meccan'?'Mekki':'Medeni'}`;
+  renderAyahs(startAyah);
+  safeSet('ezannema.reading',{surah:number,ayah:startAyah});
+  $('readerNote').textContent=meal?'Arapça metin ve seçilen meal yüklendi. Ses bağlantısı bulunmayan ayetlerde dinleme düğmesi kullanılamaz.':'Arapça metin yüklendi. Seçilen meal yüklenemedi; Ayarlar/meal seçimini değiştirip yeniden açın.';
+ }catch(e){$('ayahList').innerHTML='<div class="note">Sure metni yüklenemedi. İnternet bağlantısını kontrol edin ve tekrar deneyin.</div>';$('readerMeta').textContent='Yükleme başarısız';}
+}
+function renderAyahs(startAyah=1){
+ $('ayahList').innerHTML=currentAyahs.map(a=>`<article class="ayah-card" id="ayah-${a.numberInSurah}"><div class="ayah-head"><span>Ayet ${a.numberInSurah}</span><span>۞ ${a.number}</span></div><div class="ayah-arabic" lang="ar">${a.text}</div>${a.translation?`<div class="ayah-translation">${a.translation}</div>`:''}<div class="ayah-controls"><button class="btn" data-play-ayah="${a.numberInSurah}">Dinle</button><button class="btn" data-save-ayah="${a.numberInSurah}">Kaldığım yer</button></div></article>`).join('');
+ document.querySelectorAll('[data-play-ayah]').forEach(b=>b.onclick=()=>playAyah(+b.dataset.playAyah));
+ document.querySelectorAll('[data-save-ayah]').forEach(b=>b.onclick=()=>saveReading(+b.dataset.saveAyah));
+ const el=$(`ayah-${startAyah}`);if(el)setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),50);
+}
+function saveReading(ayah){safeSet('ezannema.reading',{surah:currentSurah,ayah});toast(`Yer imi kaydedildi: sure ${currentSurah}, ayet ${ayah}.`)}
+function playAyah(ayahNo){
+ const a=currentAyahs.find(x=>x.numberInSurah===ayahNo);if(!a?.audio){toast('Bu ayet için ses bağlantısı bulunamadı.');return}
+ if(currentAudio){currentAudio.pause();currentAudio=null}
+ currentAudio=new Audio(a.audio);currentAudio.play().catch(()=>toast('Ses oynatılamadı. Sayfada ses oynatmaya izin verin.'));saveReading(ayahNo);
+}
+$('playSurah').onclick=()=>{const first=currentAyahs.find(a=>a.numberInSurah===1);if(first)playAyah(1)};
+$('stopQuranAudio').onclick=()=>{if(currentAudio){currentAudio.pause();currentAudio.currentTime=0;currentAudio=null}toast('Tilavet durduruldu.')};
+$('bookmarkAyah').onclick=()=>{const visible=$('ayahList').querySelector('.ayah-card');const n=visible?Number(visible.id.split('-')[1]):1;saveReading(n)};
+$('closeReader').onclick=()=>{$('quranReader').style.display='none';if(currentAudio){currentAudio.pause();currentAudio=null}};
+$('surahSearch').addEventListener('input',renderSurahList);
+$('translationSelect').onchange=()=>{if($('quranReader').style.display!=='none')openSurah(currentSurah,safeGet('ezannema.reading',{surah:currentSurah,ayah:1}).ayah||1)};
+$('resumeReading').onclick=()=>{const r=safeGet('ezannema.reading',{surah:1,ayah:1});if(surahs.length)openSurah(r.surah||1,r.ayah||1);else toast('Önce sure listesi yüklensin.')};
+$('saveIntention').onclick=()=>{safeSet('ezannema.intention',$('intentionInput').value);toast('Günün niyeti kaydedildi.')};
+$('intentionInput').value=safeGet('ezannema.intention','');
+function setLocationText(text){$('placeLabel').textContent=text;$('settingsLocation').textContent=text;safeSet('ezannema.locationLabel',text)}
+async function loadLiveTimings(lat,lon){
+ $('prayerNotice').textContent='Çevrimiçi namaz vakitleri alınıyor…';
+ try{
+  const stamp=Math.floor(Date.now()/1000);
+  const url=`https://api.aladhan.com/v1/timings/${stamp}?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&method=13`;
+  const response=await fetch(url,{headers:{'Accept':'application/json'}});
+  if(!response.ok)throw new Error('Vakit kaynağı yanıt vermedi');
+  const json=await response.json();if(json.code!==200||!json.data?.timings)throw new Error('Vakit verisi geçersiz');
+  const t=json.data.timings;
+  const clean=v=>String(v||'').match(/\d{1,2}:\d{2}/)?.[0];
+  const next=[['İmsak',clean(t.Fajr)],['Güneş',clean(t.Sunrise)],['Öğle',clean(t.Dhuhr)],['İkindi',clean(t.Asr)],['Akşam',clean(t.Maghrib)],['Yatsı',clean(t.Isha)]];
+  if(next.some(x=>!x[1]))throw new Error('Eksik vakit verisi');
+  prayerTimes=next;timingsLive=true;renderPrayers();tick();
+  $('nextDate').textContent='Kaynak: çevrimiçi • Türkiye yöntemi';
+  safeSet('ezannema.prayerTimes',{date:new Date().toISOString().slice(0,10),times:prayerTimes,lat,lon});
+  toast('Namaz vakitleri güncellendi.');
+ }catch(e){
+  timingsLive=false;renderPrayers();toast('Canlı vakit alınamadı; örnek saatler gösteriliyor.');
+ }
+}
+async function locate(){
+ if(!navigator.geolocation){toast('Bu tarayıcı konum özelliğini desteklemiyor.');return}
+ toast('Konum izni bekleniyor…');
+ navigator.geolocation.getCurrentPosition(async pos=>{
+  const {latitude:lat,longitude:lon}=pos.coords;safeSet('ezannema.coordinates',{lat,lon});
+  let label=`Konum (${lat.toFixed(3)}, ${lon.toFixed(3)})`;
+  try{const url=`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${encodeURIComponent(lat)}&lon=${encodeURIComponent(lon)}`;const r=await fetch(url,{headers:{'Accept-Language':'tr'}});if(r.ok){const d=await r.json(),a=d.address||{};label=[a.suburb||a.neighbourhood||a.village||a.town||a.city,a.city||a.province||a.state].filter((v,i,arr)=>v&&arr.indexOf(v)===i).join(', ')||label}}catch{}
+  setLocationText(label);await loadLiveTimings(lat,lon);
+ },err=>{toast(err.code===1?'Konum izni verilmedi. Tarayıcı ayarlarını kontrol edin.':'Konum alınamadı. Yeniden deneyin.')},{enableHighAccuracy:true,timeout:10000,maximumAge:300000});
+}
+$('locationBtn').onclick=$('locationSetting').onclick=locate;
+$('exportData').onclick=()=>{const data={style,tasbih,theme,intention:safeGet('ezannema.intention',''),location:safeGet('ezannema.locationLabel','')};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ezan-nema-tercihler.json';a.click();URL.revokeObjectURL(url);toast('Tercih dosyası oluşturuldu.')};
+$('clearData').onclick=()=>{if(confirm('Bu prototipin yerel tercihleri silinsin mi?')){['ezannema.style','ezannema.tasbih','ezannema.theme','ezannema.intention','ezannema.locationLabel','ezannema.coordinates','ezannema.prayerTimes','ezannema.reminderOn','ezannema.lastAlertKey'].forEach(k=>localStorage.removeItem(k));location.reload()}};
+let lastAlertKey=safeGet('ezannema.lastAlertKey','');
+let reminderOn=safeGet('ezannema.reminderOn',false);
+let alertTimer=null, audioContext=null, soundNodes=[];
+function nextPrayerInfo(){
+ const now=new Date();let found=null;
+ for(let dayOffset=0;dayOffset<=1&&!found;dayOffset++){
+  for(let i=0;i<prayerTimes.length;i++){
+   const [h,m]=prayerTimes[i][1].split(':').map(Number),target=new Date(now);
+   target.setDate(now.getDate()+dayOffset);target.setHours(h,m,0,0);
+   if(target>now){found={idx:i,target,dayOffset};break}
+  }
+ }
+ return found||{idx:0,target:new Date(now.getTime()+86400000),dayOffset:1};
+}
+function tick(){
+ const now=new Date(),info=nextPrayerInfo(),idx=info.idx,target=info.target,ms=target-now;
+ const hh=Math.floor(ms/3600000),mm=Math.floor(ms%3600000/60000),ss=Math.floor(ms%60000/1000),formatted=[hh,mm,ss].map(n=>String(n).padStart(2,'0')).join(':');
+ $('countdown').textContent=formatted;$('ringTime').textContent=`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;$('studioTime').textContent=`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;
+ $('nextPrayer').textContent=prayerTimes[idx][0];$('ringPrayer').textContent=$('studioPrayer').textContent=prayerTimes[idx][0];
+ $('nextDate').textContent=(timingsLive?'Vakit: ':'Örnek saat: ')+prayerTimes[idx][1]+(info.dayOffset?' • yarın':'');
+ const key=`${target.getFullYear()}-${target.getMonth()+1}-${target.getDate()}-${prayerTimes[idx][0]}`;
+ if(reminderOn&&Notification.permission==='granted'){
+  const diff=target-now;
+  if(diff>0&&diff<=5*60*1000&&lastAlertKey!==key){
+   try{new Notification('EZAN NEMA • Vakit yaklaşıyor',{body:`${prayerTimes[idx][0]} vaktine 5 dakikadan az kaldı.`,tag:'ezannema-'+key});lastAlertKey=key;safeSet('ezannema.lastAlertKey',key)}catch{}
+  }
+ }
+}
+function updateNotifyStatus(){
+ const supported='Notification' in window;
+ $('notifyStatus').textContent=!supported?'Bu tarayıcı bildirim API’sini desteklemiyor':Notification.permission==='granted'?'Bildirim izni açık':Notification.permission==='denied'?'Bildirim izni engellendi':'Bildirim izni gerekli';
+ $('enableNotifications').textContent=Notification.permission==='granted'?'İzin etkin':'İzni etkinleştir';
+}
+async function enableNotifications(){
+ if(!('Notification' in window)){toast('Bu tarayıcı bildirimleri desteklemiyor.');return}
+ try{const result=await Notification.requestPermission();updateNotifyStatus();toast(result==='granted'?'Bildirim izni etkinleştirildi.':'Bildirim izni verilmedi.')}catch{toast('Bildirim izni alınamadı.')}
+}
+function stopSound(){soundNodes.forEach(n=>{try{n.stop?.();n.disconnect?.()}catch{}});soundNodes=[];if(audioContext){try{audioContext.close()}catch{}audioContext=null}}
+async function testSound(){
+ stopSound();
+ try{
+  const Ctx=window.AudioContext||window.webkitAudioContext;if(!Ctx){toast('Bu tarayıcı ses üretimini desteklemiyor.');return}
+  audioContext=new Ctx();if(audioContext.state==='suspended')await audioContext.resume();
+  const ctx=audioContext,now=ctx.currentTime;
+  // A short, gentle synthesized chime for testing only — not an adhan recording.
+  [523.25,659.25,783.99,659.25].forEach((freq,i)=>{
+   const osc=ctx.createOscillator(),gain=ctx.createGain();osc.type='sine';osc.frequency.value=freq;
+   gain.gain.setValueAtTime(0.0001,now+i*.42);gain.gain.exponentialRampToValueAtTime(.09,now+i*.42+.04);gain.gain.exponentialRampToValueAtTime(.0001,now+i*.42+.36);
+   osc.connect(gain);gain.connect(ctx.destination);osc.start(now+i*.42);osc.stop(now+i*.42+.38);soundNodes.push(osc,gain);
+  });
+  toast('Deneme sesi çalınıyor. Bu gerçek ezan kaydı değildir.');
+ }catch{toast('Ses başlatılamadı. Sayfayla etkileşip tekrar deneyin.')}
+}
+$('enableNotifications').onclick=enableNotifications;
+$('reminderSwitch').classList.toggle('on',reminderOn);$('reminderSwitch').setAttribute('aria-pressed',String(reminderOn));
+$('reminderSwitch').onclick=async()=>{
+ if(!reminderOn&&('Notification'in window)&&Notification.permission!=='granted'){await enableNotifications();if(Notification.permission!=='granted')return}
+ reminderOn=!reminderOn;safeSet('ezannema.reminderOn',reminderOn);$('reminderSwitch').classList.toggle('on',reminderOn);$('reminderSwitch').setAttribute('aria-pressed',String(reminderOn));toast(reminderOn?'5 dakika kala hatırlatma açık.':'Vakit hatırlatması kapalı.');
+};
+$('testSound').onclick=testSound;$('stopSound').onclick=stopSound;
+updateNotifyStatus();
+applyTheme();renderPrayers();renderProfileOptions();syncControls();renderRings();renderTasbih();renderQuran();tick();setInterval(tick,1000);
+const savedLoc=safeGet('ezannema.locationLabel','');if(savedLoc)setLocationText(savedLoc);
+const savedCoords=safeGet('ezannema.coordinates',null);
+if(savedCoords&&Number.isFinite(savedCoords.lat)&&Number.isFinite(savedCoords.lon))loadLiveTimings(savedCoords.lat,savedCoords.lon);
+})();
+</script>
+</body>
+</html>
